@@ -1,0 +1,188 @@
+/* Main Container */
+.topiclist {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+}
+
+/* Table Header */
+.topiclist thead th {
+    color: #ffffff;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    text-transform: uppercase;
+}
+
+/* Table Cells */
+.topiclist td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+}
+
+/* Column Widths */
+.topiclist .itopic_titles {
+    width: 50%;
+    text-align: left;
+}
+.topiclist .forum {
+    width: 15%;
+}
+.topiclist .topics,
+.topiclist .posts {
+    width: 10%;
+}
+.topiclist .remove {
+    width: 15%;
+}
+
+/* Alternating Row Styles */
+.topiclist tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.topiclist tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Row Hover Style */
+.topiclist tbody tr:hover {
+    background-color: #e1e8f0;
+}
+
+/* Link Styles */
+.topiclist a {
+    color: #007bce;
+    text-decoration: none;
+}
+.topiclist a:hover {
+    text-decoration: underline;
+}
+
+/* Top Letter Block */
+.filtrino { 
+    text-align: center;
+    margin: 5px; 
+    text-transform: uppercase; 
+    font-size: 12px !important; 
+    font-weight: bold; 
+}
+
+.i_abcdz { 
+    margin: 0 0 0 2px; 
+    padding: 0 4px; 
+    background: #CADCEB; 
+}
+
+.i_abcdz:hover { 
+    background: #9badb9; 
+    text-decoration: none !important; 
+}
+
+.i_nourl { 
+    background: #FFFFFF !important; 
+    color: #c2c2c2 !important; 
+}
+
+.i_all { 
+    background: #CADCEB;  
+}
+
+.i_all:hover { 
+    background: #9badb9; 
+    text-decoration: none !important; 
+}
+
+.ianytopuc { 
+    text-align: center; 
+    font-size: 14px; 
+}
+
+/* Special Style for Letters */
+.icenter {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.icenter span {
+    display: inline-block;
+    margin-right: 5px;
+}
+.icenter a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #007bce;
+}
+.icenter a:hover {
+    text-decoration: underline;
+}
+
+/* Media Query for Small Screens (Smartphones) */
+@media (max-width: 850px) {
+    ul.topiclist {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul.topiclist li.header dt {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.2em;
+        line-height: 1.5em;
+        padding: 10px 0;
+    }
+
+    ul.topiclist li.header dt .list-inner {
+        margin-right: 0 !important;
+        padding-right: 0;
+    }
+
+    ul.topiclist dt, ul.topiclist dt .list-inner {
+        margin-right: 0;
+        padding: 5px 0;
+        text-align: center;
+    }
+
+    ul.topiclist dd {
+        display: none; /* Hide non-essential columns */
+    }
+
+    ul.topiclist li.row {
+        display: flex;
+        flex-direction: column; /* Vertical layout for rows */
+        align-items: center;
+        padding: 10px 5px;
+    }
+
+    ul.topiclist li.row .itopic_titles {
+        width: 100%;
+        text-align: center;
+        font-size: 1.1em;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    ul.topiclist li.row a {
+        font-size: 1em;
+        text-decoration: none;
+    }
+
+    ul.topiclist li.row a:hover {
+        text-decoration: underline;
+    }
+
+    .filtrino {
+        font-size: 10px;
+    }
+
+    .i_abcdz, .i_all {
+        font-size: 10px;
+        padding: 2px 3px;
+        margin: 0 1px;
+    }
+}
